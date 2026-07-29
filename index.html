@@ -1,207 +1,163 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
-  
-  <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="John Doe">
-<meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
-    
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
-
-  
-  
-<link rel="stylesheet" href="/css/style.css">
-
-  
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
-
-  
-<meta name="generator" content="Hexo 6.3.0"></head>
-
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+<!doctype html>
+<html lang="zh-CN" data-language="zh">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Chaohui Zhou 的个人网站：研究、笔记与项目。" />
+    <meta name="theme-color" content="#fdfcf9" />
+    <title>Chaohui Zhou | 周朝辉</title>
+    <link rel="stylesheet" href="site.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Skip to content</a>
+    <header id="top" class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#top">Chaohui Zhou <span>周朝辉</span></a>
+        <nav aria-label="Main navigation">
+          <a href="#posts"><span class="zh">文章</span><span class="en">Posts</span></a>
+          <a href="#research"><span class="zh">研究与项目</span><span class="en">Research &amp; Projects</span></a>
+          <a href="#resources"><span class="zh">资源</span><span class="en">Resources</span></a>
+          <a href="#about"><span class="zh">关于我</span><span class="en">About</span></a>
+        </nav>
+        <button id="language-toggle" class="language-toggle" type="button" aria-label="Switch language">
+          <span class="zh">EN</span><span class="en">中文</span>
+        </button>
       </div>
+    </header>
+
+    <div class="notion-cover" role="img" aria-label="Misty mountain lake at dawn">
+      <svg viewBox="0 0 1600 460" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs>
+          <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#d7e3e5"/>
+            <stop offset="53%" stop-color="#aebfc4"/>
+            <stop offset="100%" stop-color="#8c9da1"/>
+          </linearGradient>
+          <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#8ca1a5"/>
+            <stop offset="100%" stop-color="#536a6d"/>
+          </linearGradient>
+          <filter id="mist"><feGaussianBlur stdDeviation="11"/></filter>
+        </defs>
+        <rect width="1600" height="460" fill="url(#sky)"/>
+        <path d="M0 260 L235 95 L455 251 L650 104 L850 261 L1085 75 L1320 250 L1510 110 L1600 188 V300 H0Z" fill="#70888c" opacity=".78"/>
+        <path d="M0 290 L210 158 L420 284 L625 157 L838 285 L1085 133 L1300 286 L1514 158 L1600 215 V325 H0Z" fill="#5d7677" opacity=".78"/>
+        <path d="M0 272 C250 235 417 270 630 244 C880 211 1127 278 1600 221 V460 H0Z" fill="url(#water)"/>
+        <path d="M0 335 C245 310 504 347 760 318 C1020 291 1295 339 1600 306" fill="none" stroke="#d6e0df" stroke-width="4" opacity=".32"/>
+        <path d="M0 371 C315 346 510 386 825 356 C1140 326 1354 375 1600 347" fill="none" stroke="#d6e0df" stroke-width="3" opacity=".2"/>
+        <ellipse cx="780" cy="242" rx="710" ry="44" fill="#edf2ee" opacity=".33" filter="url(#mist)"/>
+        <path d="M0 286 C200 264 386 285 544 270 C778 247 1000 298 1240 267 C1390 247 1500 260 1600 248 V310 C1450 317 1320 322 1170 314 C926 302 745 300 530 309 C308 317 160 306 0 315Z" fill="#e7ece6" opacity=".24"/>
+      </svg>
+      <div class="cover-caption"><span class="zh">山湖 · 晨雾</span><span class="en">MOUNTAINS · MORNING MIST</span></div>
     </div>
-  </div>
-</header>
 
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/02/16/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2023-02-16T03:32:25.689Z" itemprop="datePublished">2023-02-16</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/02/16/hello-world/">Hello World</a>
-    </h1>
-  
+    <main id="content" class="layout">
+      <div class="main-column">
+        <section class="intro" aria-labelledby="welcome-title">
+          <p class="kicker"><span class="zh">个人网站 · 研究 · 笔记</span><span class="en">PERSONAL SITE · RESEARCH · NOTES</span></p>
+          <h1 id="welcome-title">
+            <span class="zh">你好，我是<br />Chaohui Zhou。</span>
+            <span class="en">Hello, I’m<br />Chaohui Zhou.</span>
+          </h1>
+          <p class="intro-copy zh">欢迎来到我的个人主页。我会在这里记录研究兴趣、项目进展，以及值得分享的学习笔记与资源。</p>
+          <p class="intro-copy en">Welcome to my personal website. This is a place for research interests, project updates, and notes or resources worth sharing.</p>
+        </section>
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+        <section id="posts" class="content-section" aria-labelledby="posts-title">
+          <div class="section-title-row">
+            <h2 id="posts-title"><span class="zh">最新文章</span><span class="en">Latest posts</span></h2>
+            <span class="rule"></span>
+          </div>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+          <article class="post">
+            <p class="post-meta">2026 · 07 · 29</p>
+            <h3><span class="zh">欢迎来到我的个人网站</span><span class="en">Welcome to my personal website</span></h3>
+            <p class="zh">这是一个持续更新的主页，用于整理研究、项目与阅读笔记。内容将在未来逐步补充。</p>
+            <p class="en">This is a living home for research, projects, and reading notes. More material will be added over time.</p>
+            <a class="post-link" href="#about"><span class="zh">阅读全文 →</span><span class="en">Read more →</span></a>
+          </article>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+          <article class="post">
+            <p class="post-meta">RESEARCH · NOTES</p>
+            <h3><span class="zh">研究与项目页面正在建设中</span><span class="en">Research and project pages are in progress</span></h3>
+            <p class="zh">未来将在此发布研究摘要、项目材料、演示文稿与可复现资源。</p>
+            <p class="en">This space will collect research summaries, project materials, presentations, and reproducible resources.</p>
+            <a class="post-link" href="#research"><span class="zh">查看研究与项目 →</span><span class="en">View research &amp; projects →</span></a>
+          </article>
+        </section>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+        <section id="research" class="content-section" aria-labelledby="research-title">
+          <div class="section-title-row">
+            <h2 id="research-title"><span class="zh">研究与项目</span><span class="en">Research &amp; projects</span></h2>
+            <span class="rule"></span>
+          </div>
+          <div class="research-grid">
+            <article class="research-card">
+              <p class="card-label"><span class="zh">研究</span><span class="en">RESEARCH</span></p>
+              <h3><span class="zh">研究主题待补充</span><span class="en">Research topic to be added</span></h3>
+              <p class="zh">在此填写问题意识、研究方法与核心发现；未来可链接论文 PDF、代码和数据。</p>
+              <p class="en">Add the question, methods, and contribution here. Later, link to papers, code, and data.</p>
+            </article>
+            <article class="research-card">
+              <p class="card-label"><span class="zh">项目</span><span class="en">PROJECT</span></p>
+              <h3><span class="zh">项目标题待补充</span><span class="en">Project title to be added</span></h3>
+              <p class="zh">用简短说明介绍一个正在进行或已完成的项目，并添加相关成果链接。</p>
+              <p class="en">Use a short description for an ongoing or completed project and link related materials.</p>
+            </article>
+          </div>
+        </section>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+        <section id="resources" class="content-section" aria-labelledby="resources-title">
+          <div class="section-title-row">
+            <h2 id="resources-title"><span class="zh">资源与笔记</span><span class="en">Resources &amp; notes</span></h2>
+            <span class="rule"></span>
+          </div>
+          <p class="section-copy zh">这里适合收录文献笔记、工具教程、数据资源和课程材料。保持条目简洁、可检索，并优先分享真正有用的内容。</p>
+          <p class="section-copy en">This is a good home for reading notes, tool guides, data resources, and course material. Keep entries concise, searchable, and genuinely useful.</p>
+          <div class="tag-list" aria-label="Topics">
+            <span>Economics</span><span>Research</span><span>Data</span><span>Notes</span><span>Tools</span>
+          </div>
+        </section>
+      </div>
 
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/02/16/hello-world/" data-id="cle6jugr80000341lgu19e7jv" data-title="Hello World" class="article-share-link">Share</a>
-      
-      
-      
+      <aside class="sidebar">
+        <section id="about" class="profile-card" aria-labelledby="about-title">
+          <div class="avatar" aria-hidden="true">CZ</div>
+          <h2 id="about-title"><span class="zh">关于我</span><span class="en">About me</span></h2>
+          <p class="zh">Chaohui Zhou 的个人空间，记录研究、项目和思考。</p>
+          <p class="en">A personal space for Chaohui Zhou’s research, projects, and ideas.</p>
+          <p class="profile-note zh">可在此补充学校、院系、学位项目和研究领域。</p>
+          <p class="profile-note en">Add your institution, programme, and research fields here.</p>
+        </section>
+
+        <section class="contact-card" aria-labelledby="contact-title">
+          <h2 id="contact-title"><span class="zh">联系我</span><span class="en">Contact</span></h2>
+          <a class="email" href="mailto:972902536@qq.com">972902536@qq.com</a>
+          <div class="wechat-block">
+            <img src="wechat-qr-placeholder.svg" alt="WeChat QR code placeholder" />
+            <div>
+              <p class="wechat-title"><span class="zh">微信</span><span class="en">WeChat</span></p>
+              <p class="wechat-copy zh">请将你的真实微信二维码图片命名为 <code>wechat-qr.png</code> 并替换此占位图。</p>
+              <p class="wechat-copy en">Replace this placeholder with your QR image, named <code>wechat-qr.png</code>.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="side-section" aria-labelledby="links-title">
+          <h2 id="links-title"><span class="zh">链接</span><span class="en">Links</span></h2>
+          <ul class="side-links">
+            <li><a href="https://chaohuizhou.org">chaohuizhou.org</a></li>
+            <li><span class="zh">GitHub 链接待添加</span><span class="en">GitHub link to be added</span></li>
+            <li><span class="zh">简历链接待添加</span><span class="en">CV link to be added</span></li>
+          </ul>
+        </section>
+      </aside>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Chaohui Zhou</p>
+      <p><span class="zh">一个持续更新的个人主页。</span><span class="en">A personal website in progress.</span></p>
     </footer>
-  </div>
-  
-</article>
-
-
-
-  
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/02/">February 2023</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2023/02/16/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2023 John Doe<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-
-<script src="/js/jquery-3.4.1.min.js"></script>
-
-
-
-  
-<script src="/fancybox/jquery.fancybox.min.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
-
-
-
-
-
-  </div>
-</body>
+    <script src="site.js"></script>
+  </body>
 </html>
